@@ -1,0 +1,362 @@
+.profileComponents {
+  width: 100%;
+  height: 100%;
+
+  padding-top: 59px;
+  caret-color: transparent;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+.profileComponent {
+  max-width: 935px;
+  margin: 30px auto 30px;
+}
+.profileDetails {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin-bottom: 40px;
+}
+.profileNav {
+  display: flex;
+  margin-bottom: 12px;
+}
+.profileImage {
+  height: 197px;
+  width: 292px;
+  margin-right: 29px;
+}
+
+.profileCanvas {
+  position: absolute;
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  border: 3.5px solid rgb(192, 83, 77);
+  margin-top: -17px;
+  margin-left: 61px;
+}
+.profileImg {
+  margin-left: 82px;
+  margin-top: 11px;
+  cursor: none;
+}
+.profileName {
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+}
+.verifyingImage {
+  margin-top: 5px;
+  margin-left: 8px;
+}
+.sugIcon {
+  transform: rotate(180deg);
+}
+.messageButton {
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  border: solid 1px #dbdbdb;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 75px;
+  height: 30px;
+  margin-left: 20px;
+}
+.followButton {
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  border: solid 1px #dbdbdb;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  width: 74px;
+  height: 30px;
+  margin-left: 8px;
+}
+.followButtonDiv {
+  margin-left: -2px;
+  margin-top: -4px;
+}
+.suggestionButton {
+  width: 34px;
+  height: 30px;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  border: solid 1px #dbdbdb;
+  border-radius: 5px;
+  margin-left: 8px;
+}
+.sugIcon {
+  margin-top: -4px;
+  margin-left: -1px;
+}
+.mor-button {
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  width: 34px;
+  height: 30px;
+  margin-left: 6px;
+  border: none;
+}
+.moreIcon {
+  margin-top: -4px;
+}
+.profileNumbers {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.profileSpans {
+  margin-right: 40px;
+}
+.spanNumbers {
+  font-weight: 600;
+}
+.webLink {
+  color: rgba(var(--fe0, 0, 55, 107), 1);
+  text-decoration: none;
+  font-weight: 600;
+}
+.followDetails {
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 14px;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  font-weight: 500;
+}
+
+.mediaHeaders {
+  border-top: 1px solid rgba(var(--b38, 219, 219, 219), 1);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  max-width: 935px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+}
+.mediaHeader {
+  text-decoration: none;
+  margin-right: 60px;
+
+  color: #8e8e8e;
+}
+._8-yf5 {
+  margin-top: -3px;
+}
+.mediaHeaderl {
+  text-decoration: none;
+  color: #8e8e8e;
+}
+.mediaHeaderDiv {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mediaGridDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-bottom: 28px;
+}
+.mediaDiv {
+  margin-right: 28px;
+}
+.mediaDiv:last-child {
+  margin-right: 0;
+}
+
+.footerNAv {
+  margin-top: 46px;
+}
+.footerUl {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  /* margin-left: 175px; */
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footerLi {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.footerA {
+  text-decoration: none;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  font-size: 12px;
+  font-weight: 400;
+}
+.vsc-controller {
+  display: none;
+}
+
+/* yeni css */
+
+/**********************************************************/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 935px;
+  margin: 0 auto;
+  padding: 0;
+}
+.gallery-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@supports (display: grid) {
+  .gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    grid-auto-rows: minmax(auto, 23%);
+    margin: 0;
+  }
+}
+
+.gallery-item {
+  position: relative;
+  color: #fff;
+  width: auto;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.gallery-item:hover .gallery-item-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item-info {
+  display: none;
+}
+
+.gallery-item-info li {
+  display: inline-block;
+
+  font-weight: 600;
+}
+
+.gallery-item-likes {
+  margin-right: 2.2rem;
+}
+
+.gallery-item-type {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+@media screen and (max-width: 728px) {
+  .gallery {
+    grid-gap: 3px;
+  }
+  .gallery-item-info li {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 600;
+  }
+  .profileComponent {
+    margin: 16px auto 30px;
+  }
+  .profileCanvas {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 3.5px solid rgb(192, 83, 77);
+    margin-top: -1px;
+    margin-left: 15px;
+    cursor: none;
+  }
+  .profileImg {
+    margin-left: 22px;
+    margin-top: 9px;
+    cursor: none;
+    height: 50px;
+  }
+  .profileImage {
+    width: 78px;
+  }
+  .aboutgroup {
+    position: absolute;
+    top: 175px;
+    left: 16px;
+    margin-bottom: 0px;
+    font-size: 14px;
+  }
+  .profileMediaDiv {
+    margin-top: 5rem;
+  }
+  .bgroup {
+    position: absolute;
+    top: 122px;
+    left: 101px;
+  }
+  .profilInfos {
+    margin-left: 14px;
+  }
+  .messageButton {
+    width: 153px;
+  }
+  .followButton {
+    width: 48px;
+  }
+  ._8-yf5 {
+    width: 18px;
+  }
+  .headerTag {
+    display: none;
+  }
+  .headerTagIcon {
+    height: 24px;
+    width: 24px;
+  }
+  .mediaHeaderDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    align-items: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .mediaHeaders {
+    display: grid;
+    height: 45px;
+  }
+  .mediaHeader {
+    margin-right: 0;
+  }
+  .profileNumbers {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: absolute;
+    text-align: center;
+    left: 0;
+
+    margin-bottom: 0px;
+    height: 60px;
+    align-items: center;
+    border-top: 1px solid rgba(var(--b38, 219, 219, 219), 1);
+    margin-top: 10rem;
+  }
+  .profileSpans {
+    display: grid;
+    margin-right: 0;
+    font-size: 14px;
+  }
+}

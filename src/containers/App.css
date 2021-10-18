@@ -1,0 +1,582 @@
+.instaApp {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif;
+}
+#navbar-app {
+  border-bottom: solid 1px #dbdbdb;
+  height: 54px;
+  justify-content: unset;
+  background-color: white;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+.navCon {
+  max-width: 975px;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.navContainer {
+  max-width: 936px;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand {
+  margin-top: 5px;
+  max-width: 360px;
+  width: 100%;
+  margin-right: 0;
+}
+.searchInput {
+  height: 28px;
+  width: 215px;
+  border-radius: 3px;
+  outline-offset: 0;
+  background: #fafafa;
+  border: solid 1px #dbdbdb;
+  font-size: 14px;
+}
+
+.searchInput:focus {
+  border: none;
+  outline: solid 1px #dbdbdb;
+  border-radius: 3px;
+}
+.searchIcon {
+  position: absolute;
+  margin-top: 11px;
+  margin-left: 5%;
+}
+.searchInput::placeholder {
+  padding-left: 89px;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  font-weight: 300;
+}
+.newPost {
+  border: none;
+  background-color: white;
+}
+.navIcon {
+  margin-left: 22px;
+}
+.profileIcon {
+  margin-left: 22px;
+}
+.nav {
+  width: 360px;
+
+  justify-content: flex-end;
+}
+.newPost {
+  padding: 0;
+}
+.storybox {
+  border: solid 1px #dbdbdb;
+  background-color: white;
+}
+.storybox::-webkit-scrollbar {
+  width: 0;
+}
+
+.mainContainer {
+  display: flex;
+  max-width: 936px;
+  margin: 0 auto;
+  padding-top: 83px;
+}
+.main-container {
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+}
+.albumContainer {
+  max-width: 614px;
+  margin-right: 28px;
+  width: 100%;
+
+  caret-color: transparent;
+}
+
+.sugContainer {
+  width: 293px;
+  margin-left: 640px;
+  position: fixed;
+  caret-color: transparent;
+}
+.storybox {
+  width: 614px;
+  height: 118px;
+  border: solid 1px #dbdbdb;
+  border-radius: 3px;
+  margin-bottom: 24px;
+  overflow-y: hidden;
+  position: relative;
+}
+.stories {
+  width: 612px;
+  height: 84px;
+  /* border: solid 1px #dbdbdb; */
+  margin-top: 19px;
+}
+.storyUl {
+  list-style: none;
+  margin-left: -14px;
+  display: flex;
+}
+
+.storyli {
+  display: block;
+  display: inline-grid;
+  margin-right: 19px;
+}
+.canvasBorder {
+  position: absolute;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  border: 2px solid rgb(192, 83, 77);
+}
+
+.storyUser {
+  letter-spacing: 0.01em;
+  max-width: 74px;
+  font-size: 12px;
+  color: #262626;
+  text-align: center;
+  margin-top: 4px;
+}
+.stroyimage {
+  border: solid 1px #dbdbdb;
+  border-radius: 30px;
+  margin-left: 2.5px;
+  margin-top: 2.7px;
+}
+.albumheader {
+  height: 60px;
+}
+.userCanvasBorder {
+  position: absolute;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: 2px solid rgb(192, 83, 77);
+}
+.instaUserImage {
+  border-radius: 50%;
+  margin-top: 2.8px;
+  margin-left: 3px;
+}
+
+.postHeader {
+  display: flex;
+  align-items: center;
+  padding: 10px 16px 12px 12px;
+}
+
+.suggestions {
+  border: solid 1px #dbdbdb;
+}
+
+.userName {
+  font-weight: 600;
+  font-size: smaller;
+  margin-left: 16px;
+  margin-top: 2px;
+}
+.moreIcon {
+  margin-left: auto;
+}
+.post {
+  border: solid 1px #dbdbdb;
+  margin-bottom: 24px;
+  background-color: white;
+}
+.postImages {
+  max-width: 614px;
+  max-height: 614px;
+  width: 100%;
+  height: 100%;
+}
+.postImage {
+  max-width: 614px;
+  max-height: 614px;
+  width: 100%;
+  height: 100%;
+}
+.postPıtcure {
+  max-width: 613px;
+  max-height: 613px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.video {
+  max-width: 613px;
+  max-height: 613px;
+  width: 100%;
+  height: 100%;
+}
+.video-wrapper {
+  max-width: 613px;
+  max-height: 613px;
+  width: 100%;
+  position: relative;
+}
+.controls {
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 5px;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.video-control {
+  transition: opacity 200ms linear;
+}
+.control-shown {
+  opacity: 1;
+}
+.control-hidden {
+  opacity: 0;
+}
+.postIcons {
+  display: flex;
+  max-width: 614px;
+
+  padding-left: 16px;
+  padding-right: 6px;
+  margin-top: 4px;
+}
+
+.postCommentIcons {
+  margin-left: -8px;
+}
+.iconButton {
+  border: none;
+  height: 40px;
+  width: 40px;
+  background-color: white;
+}
+.postSignIcon {
+  margin-left: auto;
+}
+.postLike {
+  margin-bottom: 8px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+.likeVal {
+  font-weight: 600;
+  font-size: 14px;
+  color: black;
+  text-decoration: none;
+}
+.comments {
+  padding: 0 16px;
+  overflow: auto;
+}
+.userComment {
+  margin-bottom: 4px;
+  overflow-wrap: break-word;
+}
+.followersComment {
+  margin-bottom: 4px;
+  display: flex;
+}
+.postTime {
+  padding-left: 16px;
+  margin-bottom: 4px;
+}
+.userComment {
+  font-size: 14px;
+}
+.userNameComment {
+  color: black;
+  text-decoration: none;
+
+  font-weight: 600;
+}
+.moreButton {
+  border: none;
+  background: white;
+}
+.commentViewer {
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  font-size: 14px;
+  text-decoration: none;
+}
+.followersName {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+.followersComment {
+  font-size: 14px;
+}
+.postTime {
+  font-size: 10px;
+  letter-spacing: 0.2px;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+}
+.followerCommentsLike {
+  margin-left: auto;
+}
+.postMessageArea {
+  min-height: 56px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-top: 1px solid rgba(var(--ce3, 239, 239, 239), 1);
+  margin-top: 4px;
+}
+/* 
+  font-size: 14px;
+  line-height: 18px;
+  justify-content: center;
+   */
+
+.emojiButton {
+  border: none;
+  background-color: white;
+  padding: 8px 16px 8px 0;
+
+  /* 
+  
+  width: 40px;
+  height: 40px; */
+}
+.textareaDiv {
+  padding-top: 10px;
+  width: 514px;
+
+  /* 
+  resize: none;
+  
+  padding-top: 8px;
+   */
+}
+#postArea {
+  width: 512px;
+  font: 400 14px Arial;
+  overflow: auto;
+  border: none;
+  resize: none;
+  max-height: 80px;
+}
+textarea:focus {
+  border: 0 none #fff;
+  overflow: hidden;
+  outline: none;
+}
+.postButton {
+  color: rgba(var(--d69, 0, 149, 246), 1);
+  border: none;
+  background-color: white;
+  margin-left: auto;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.message {
+  height: 40px;
+  width: 582px;
+  display: flex;
+  padding-top: 6px;
+}
+.sugUserAvatar {
+  border-radius: 50%;
+}
+.suguserInfo {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  align-items: center;
+}
+.sugUserName {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 19px;
+}
+.switch {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 12px;
+  border: none;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  color: rgba(var(--d69, 0, 149, 246), 1);
+}
+.suggestionHeader {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+.suggestionText {
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  font-weight: 600;
+  font-size: 14px;
+}
+.seeAll {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 12px;
+  border: none;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  color: black;
+}
+
+.suggestionUser {
+  display: flex;
+  align-items: center;
+  margin-bottom: 9px;
+}
+.suggestionUserDiv {
+  margin-top: 10px;
+}
+
+.sugImageCanvas {
+  position: absolute;
+  border-radius: 50%;
+  width: 40x;
+  height: 40px;
+  border: 2px solid rgb(192, 83, 77);
+}
+.sugImage {
+  margin-top: 2.6px;
+  margin-left: 3.3px;
+}
+.follow {
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 12px;
+  border: none;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  color: rgba(var(--d69, 0, 149, 246), 1);
+}
+.suggestionUserName {
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.suggestionUserName:hover {
+  text-decoration: underline;
+  color: black;
+}
+.suggestionUserDetail {
+  margin-left: 13px;
+}
+.recomendedBy {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(var(--f52, 142, 142, 142), 1);
+}
+.endNAv {
+  position: fixed;
+  margin-top: 386px;
+  margin-left: 608px;
+  height: 35px;
+}
+.navUl {
+  list-style: none;
+  max-width: 293px;
+}
+.navA {
+  text-decoration: none;
+  color: rgba(var(--edc, 199, 199, 199), 1);
+  padding-left: 8px;
+}
+.navLi {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  height: 13px;
+  display: inline;
+}
+.aboutInsta {
+  color: rgba(var(--edc, 199, 199, 199), 1);
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 13px;
+  position: fixed;
+  margin-left: 649px;
+  margin-top: 451px;
+}
+.rightButton {
+  margin-right: auto;
+}
+
+/* .videoPlayButton {
+  display: block;
+  position: absolute;
+  height: 135px;
+  left: 50%;
+  margin-left: -67px;
+  margin-top: -67px;
+  top: 50%;
+  width: 135px;
+  background-color: black;
+} */
+.postVideo {
+  width: 612px;
+  height: 612px;
+}
+
+@media (max-width: 999px) {
+  .sugContainer {
+    display: none;
+  }
+  .endNAv {
+    display: none;
+  }
+  .aboutInsta {
+    display: none;
+  }
+  .navbar-brand {
+    max-width: 270px;
+    width: 100%;
+  }
+  .albumContainer {
+    margin-left: auto;
+    margin-right: auto;
+    caret-color: transparent;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-brand {
+    max-width: 100px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .storybox {
+    margin-bottom: 0;
+  }
+  .post {
+    border: none;
+    background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  }
+  .postMessageArea {
+    display: none;
+  }
+  .iconButton {
+    background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  }
+  .emojiButton {
+    background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  }
+  .postButton {
+    background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  }
+}
+@media (max-width: 500px) {
+  .searchbar {
+    display: none;
+  }
+  .navbar-brand {
+    max-width: 100px;
+    width: 100%;
+  }
+}
